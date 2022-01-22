@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(0, 81, 188);
+}
+
+.container {
+    width: 75%;
+}
+
+.title{
+    text-align: center;
+    margin: 1.5rem 0;
+    font-family: "Great Vibes", cursive;
+    font-size: 45px;
+    color: white;
+}
+
+.questions{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+}
+
+.question{
+    width: 500px;
+    margin: 1.5rem 0rem;
+    background: rgb(45, 118, 255);
+    color: white;
+    padding: .8rem 3rem;
+    border-radius: .4rem;
+    box-shadow: 10px 5px 15px rgba(15, 15, 15, 0.418);
+}
+
+.question-container{
+    display: flex;
+    padding: .5rem 0;
+}
+
+h3{
+    flex: 1;
+    font-size: 1.3rem;
+}
+
+button{
+    padding: .5rem .7rem;
+    border: none;outline: none;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: .3s;
+    background: rgb(0, 99, 192);
+    color:  white ;
+    box-shadow: 0 0 5px rgba(0, 68, 214, 0.678);
+}
+
+i{
+    pointer-events: none;
+}
+
+button:hover{
+
+    transform: rotate(90deg);
+    background: rgb(80, 235, 255);
+    color: rgb(0, 99, 192);
+}
+
+p{
+    margin-top: .5rem;
+}
+
+.text{
+    height: 0rem;
+    visibility: hidden;
+}
+
+.active .text{
+    height: fit-content;
+}
+
+hr{
+    visibility: hidden;
+    outline: none;
+}
+
+.active hr{
+    visibility: visible;
+}
+
+.prev-btn{
+    display: none;
+}
+
+.active .text{
+    visibility: visible;
+    height: fit-content;
+    margin-top: .5rem;
+}
+
+.active .next-btn{
+    display: none;
+}
+
+.active .prev-btn{
+    display: flex;
+}
